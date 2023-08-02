@@ -7,5 +7,5 @@ This is to create SVG animations of Chinese characters to look are behave hierog
 - Thirdly, we take the black parts out.
 - Next, we find the concave hull of the disconnected parts.
 - Then, we use the filled disconnected concave hulls to make an SVG.
-- Carefully, we label the disconnectived parts with an 'id'.
+- Carefully, we label the disconnected parts with an 'id'.
 - Lastly, we animate the SVG to make it fit into the animation.
