@@ -1,0 +1,16 @@
+//This converts the simplified Chinese characters to PNG files. 
+let gm = require('gm');
+
+let picturesqueSimplifedChineseCharacters = ['人', '山', '日', '木','心','月','川', '馬', '羊', '火', '雨','熙'];
+
+for( let i = 0; i < picturesqueSimplifedChineseCharacters.length; i++) {
+gm(500, 500, 'white')
+  .gravity('Center')
+  .fill('black')
+  .font('/usr/share/fonts/truetype/wqy/wqy-microhei.ttc', 300)
+  .drawText(0, 0, picturesqueSimplifedChineseCharacters[i])
+  .write(picturesqueSimplifedChineseCharacters[i].toString() + '.png', function (err) {
+    if (err) throw err;
+    console.log('Image created successfully');
+  });
+}
