@@ -2,7 +2,7 @@
 
 This is to create SVG animations of Chinese characters to look are behave hieroglyphically.
 
-- First we have to make PNG files from the font.
+- First we have to make PNG files from the font 'wqy-microhei.ttc'.
 - Secondly, we break the PNG into RGBA files.
 - Thirdly, we take the black parts out.
 - Next, we find the concave hull of the disconnected parts.
