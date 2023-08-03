@@ -1,7 +1,9 @@
 //This entire program makes the RGB arrays. Then it finds the coordinates of the disconnected components.
 //A iterative stack structure was required for the CCL to not give a max limit error.
 //The function flood fill is changed to only include the black pixels that have at least 1 white neighboring pixel.
-//NOTE: Since the characters do not have 'holes', it is abstractly perfect data, the concave hull is the same as the bordering points.
+/*NOTE: Even though the characters do not have 'holes', 
+it is abstractly perfect data, the concave hull is the same as the bordering points because of previous comment about floodfill.
+*/
 
 //This stores every pixel.
 const fs = require('fs');
